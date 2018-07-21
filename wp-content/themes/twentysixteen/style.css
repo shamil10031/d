@@ -1,13 +1,11 @@
 /*
-Theme Name: Twenty Sixteen
+Theme Name: ADONIS (Twenty Sixteen)
 Theme URI: https://wordpress.org/themes/twentysixteen/
-Author: the WordPress team
-Author URI: https://wordpress.org/
+Author: the Shomazz
 Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
-Version: 1.5
+Version: 9999.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
 Text Domain: twentysixteen
 
 This theme, like WordPress, is licensed under the GPL.
@@ -48,43 +46,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *    14.5 - >= 1200px
  * 15.0 - Print
  */
-
-/*
-.site-title {
-    font-size: 28px;
-    font-size: 2.5rem;
-    line-height: 1.25;
-}
-.site-inner {
-    margin: 0 auto;
-    max-width: 1420px;
-    position: relative;
-}
-.site-description {
-    color: #686868;
-    font-size: 14px;
-    font-size: 1.3rem;
-    font-weight: 400;
-    line-height: 1.0769230769;
-    margin: 0.538461538em 0 0;
-    text-align : justify;
-}
-.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a {
-    font-weight: 700;
-}
-!*.site-header-main {
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-	background : #f00
-}*!
-.main-navigation {
-    margin: 0 -0.875em;
-}
-.site {
-    margin: 0px;
-}
-*/
 
 /**
  * 1.0 - Normalize
@@ -339,7 +300,7 @@ textarea {
     color: #1a1a1a;
     font-family: Merriweather, Georgia, serif;
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.75;
 }
 
@@ -832,6 +793,7 @@ a:active {
 
 .main-navigation {
     font-family: Montserrat, "Helvetica Neue", sans-serif;
+    margin: 0 -0.875em;
 }
 
 .site-footer .main-navigation {
@@ -1561,6 +1523,7 @@ blockquote:after,
 
 .site {
     background-color: #fff;
+    margin: 0px;
 }
 
 .site-inner {
@@ -1586,13 +1549,21 @@ blockquote:after,
     margin-bottom: 0;
 }
 
+.header-top{
+    background: #a90000;
+}
+
+.current_page_item{
+    background: #a90000;
+}
+
+li.current_page_item a{
+    color: #fff;
+}
+
 /**
  * 11.1 - Header
  */
-
-.site-header {
-    padding: 2.625em 7.6923%;
-}
 
 .site-header-main {
     -webkit-align-items: center;
@@ -1604,6 +1575,17 @@ blockquote:after,
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.above-header-container{
+    padding: 20px;
+    display: flex;
+}
+
+.header-right{
+    margin-left: auto;
+    text-align: right;
 }
 
 .site-branding {
@@ -1624,11 +1606,11 @@ blockquote:after,
 
 .site-title {
     font-family: Montserrat, "Helvetica Neue", sans-serif;
-    font-size: 23px;
-    font-size: 1.4375rem;
     font-weight: 700;
-    line-height: 1.2173913043;
     margin: 0;
+    font-size: 28px;
+    font-size: 2.5rem;
+    line-height: 1.25;
 }
 
 .site-branding .site-title a {
@@ -1647,11 +1629,12 @@ blockquote:after,
 .site-description {
     color: #686868;
     display: none;
-    font-size: 13px;
-    font-size: 0.8125rem;
+    font-size: 14px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.0769230769;
-    margin: 0.538461538em 0 0;
+    margin: 0.1em 0 0;
+    text-align: justify;
 }
 
 .menu-toggle {
@@ -1712,6 +1695,10 @@ blockquote:after,
 .site-main > article {
     margin-bottom: 3.5em;
     position: relative;
+}
+
+.entry-header{
+    display: none;
 }
 
 .entry-header,
@@ -2774,7 +2761,7 @@ p > video {
     body:not(.custom-background-image):after {
         background: inherit;
         content: "";
-        display: block;
+        display: none;
         height: 21px;
         left: 0;
         position: fixed;
@@ -2795,15 +2782,11 @@ p > video {
     }
 
     .site {
-        margin: 21px;
+        margin: 0px;
     }
 
     .site-main {
         margin-bottom: 5.25em;
-    }
-
-    .site-header {
-        padding: 3.9375em 7.6923%;
     }
 
     .site-branding {
@@ -2817,7 +2800,7 @@ p > video {
 
     .site-title {
         font-size: 28px;
-        font-size: 1.75rem;
+        font-size: 2.4rem;
         line-height: 1.25;
     }
 
@@ -3002,8 +2985,8 @@ p > video {
 
 @media screen and (min-width: 56.875em) {
     .site-header {
-        padding-right: 4.5455%;
-        padding-left: 4.5455%;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .site-header-main {
@@ -3145,7 +3128,8 @@ p > video {
     }
 
     .site-content {
-        padding: 0 4.5455%;
+        padding-left: 4.5455%;
+        padding-right: 4.5455%;
     }
 
     .content-area {
@@ -3442,7 +3426,7 @@ p > video {
     }
 
     .site-header {
-        padding: 5.25em 4.5455%;
+        padding: 0 0;
     }
 
     .site-branding,
@@ -3961,11 +3945,13 @@ p > video {
     }
 
     .site {
-        margin: 5%;
+        margin: 0%;
     }
 
     .site-inner {
-        max-width: none;
+        margin: 0 auto;
+        max-width: 1420px;
+        position: relative;
     }
 
     .site-header {
@@ -4014,4 +4000,7 @@ p > video {
     .widecolumn {
         padding: 0;
     }
+
+
+
 }
