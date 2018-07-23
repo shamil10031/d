@@ -1564,11 +1564,13 @@ blockquote:after,
     background: #a90000;
 }
 
-.current_page_item {
+.current_page_item, .current-menu-item, .current_page_parent{
     background: #a90000;
 }
 
-li.current_page_item a {
+li.current_page_item > a,
+li.current-menu-item > a,
+li.current_page_parent > a {
     color: #fff;
 }
 
@@ -2833,6 +2835,10 @@ p > video {
 
     .site-header-menu {
         margin: 1.3125em 0;
+    }
+
+    .current-menu-item{
+
     }
 
     .header-right{
