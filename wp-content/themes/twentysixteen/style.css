@@ -54,13 +54,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
  */
 
+.main-navigation ul ul li {
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-bottom-width: 0;
+}
+
 .current-cat {
     font-size: 1.9em;
     font-weight: bold;
 }
 
+strong > a {
+    text-decoration: underline;
+}
+
 .cat-item{
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin: 10px 20px;
     border-bottom: 1px solid #dedede;
 }
@@ -860,7 +870,7 @@ a:active {
 
 .main-navigation ul ul {
     display: none;
-    margin-left: 0.875em;
+    /*margin-left: 0.875em;*/
 }
 
 .no-js .main-navigation ul ul {
@@ -3090,11 +3100,11 @@ p > video {
         border: 0;
     }
 
-    .main-navigation ul ul li {
+    /*.main-navigation ul ul li {
         background-color: #fff;
         border: 1px solid #d1d1d1;
         border-bottom-width: 0;
-    }
+    }*/
 
     .main-navigation ul ul a {
         white-space: normal;
