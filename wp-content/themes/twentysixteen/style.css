@@ -54,6 +54,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
  */
 
+.comments-link {
+    display: none;
+}
+
+footer.entry-footer {
+    display: none;
+}
+
 .main-navigation ul ul li {
     background-color: #fff;
     border: 1px solid #d1d1d1;
@@ -69,7 +77,7 @@ strong > a {
     text-decoration: underline;
 }
 
-.cat-item{
+.cat-item {
     font-size: 1.4em;
     margin: 10px 20px;
     border-bottom: 1px solid #dedede;
@@ -157,10 +165,6 @@ sup {
 
 sub {
     bottom: -0.25em;
-}
-
-img {
-    border: 0;
 }
 
 svg:not(:root) {
@@ -534,6 +538,7 @@ img {
     max-width: 100%;
     /* Adhere to container width. */
     vertical-align: middle;
+    align-self: center;
 }
 
 del {
@@ -1593,7 +1598,7 @@ blockquote:after,
     background: #a90000;
 }
 
-.current_page_item, .current-menu-item, .current_page_parent{
+.current_page_item, .current-menu-item, .current_page_parent {
     background: #a90000;
 }
 
@@ -1734,7 +1739,7 @@ li.current_page_parent > a {
  * 11.2 - Posts and pages
  */
 
-.site-main > article {
+.site-main > article:not(.type-post) {
     margin-bottom: 3.5em;
     position: relative;
 }
@@ -2094,8 +2099,7 @@ body:not(.search-results) .entry-summary > :last-child,
 .sticky .posted-on,
 .byline {
     display: none;
-}
-
+}авжмлтва
 .single .byline,
 .group-blog .byline {
     display: inline;
@@ -2776,6 +2780,52 @@ p > video {
     margin-bottom: 0;
 }
 
+/* тут */
+
+.post.entry-header {
+    display: none;
+}
+
+article h3 {
+    text-align: left;
+    margin: 0 0 10px 0px;
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+article p {
+    text-align: left;
+    margin: 0px 0 0 0px;
+    font-size: 1.2em;
+}
+
+span.param {
+    color: #a90000;
+}
+
+.shoes-post {
+    display: flex;
+    border: 1px solid #DEDEDE;
+    border-radius: 4px;
+    padding: 37px;
+    margin-bottom: 40px !important;
+}
+
+.shoes-description {
+    margin-left: 50px;
+    flex: 1.5;
+}
+
+.shoes-image{
+    border-right: 1px solid #DEDEDE;
+    display: flex;
+    flex: none;
+    align-content: center;
+}
+
+/* тут */
+
 /**
  * 14.0 - Media Queries
  */
@@ -2827,7 +2877,7 @@ p > video {
         margin: 0px;
     }
 
-    .site-main {
+    .site-main:not(.type-post){
         margin-bottom: 5.25em;
     }
 
@@ -2865,11 +2915,11 @@ p > video {
         margin: 1.3125em 0;
     }
 
-    .current-menu-item{
+    .current-menu-item {
 
     }
 
-    .header-right{
+    .header-right {
         display: block;
     }
 
@@ -2904,7 +2954,7 @@ p > video {
         display: inline-block;
     }
 
-    .site-main > article {
+    .site-main > article:not(.type-post) {
         margin-bottom: 5.25em;
     }
 
@@ -3105,7 +3155,6 @@ p > video {
         border: 1px solid #d1d1d1;
         border-bottom-width: 0;
     }*/
-
     .main-navigation ul ul a {
         white-space: normal;
         width: 12.6875em;
@@ -3471,7 +3520,7 @@ p > video {
  */
 
 @media screen and (min-width: 61.5625em) {
-    .site-main {
+    .site-main:not(.type-post){
         margin-bottom: 7.0em;
     }
 
@@ -3506,7 +3555,7 @@ p > video {
         margin-bottom: 4.307692308em;
     }
 
-    .site-main > article {
+    .site-main > article:not(.type-post) {
         margin-bottom: 7.0em;
     }
 
@@ -3614,7 +3663,7 @@ p > video {
         margin-top: -1.105263158em;
     }
 
-    body:not(.search-results) article:not(.type-page) .entry-content {
+    body:not(.search-results) article:not(.type-page, .type-post) .entry-content {
         float: right;
         width: 71.42857144%;
     }
@@ -4029,8 +4078,10 @@ p > video {
         margin-left: 0;
     }
 
-    .post-thumbnail,
-    .site-main > article {
+    .post-thumbnail{
+        margin-bottom: 3.5em;
+    }
+    .site-main > article:not(.type-post) {
         margin-bottom: 3.5em;
     }
 
@@ -4039,6 +4090,7 @@ p > video {
         border-width: 4px 0 0 0;
         padding: 0.9473684211em 0 0;
         width: -webkit-calc(50% - 0.736842105em);
+
         width: calc(50% - 0.736842105em);
     }
 
