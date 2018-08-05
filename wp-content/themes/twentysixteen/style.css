@@ -433,17 +433,15 @@ pre {
 }
 
 pre {
-    border: 1px solid #d1d1d1;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.3125;
     margin: 0 0 1.75em;
     max-width: 100%;
     overflow: auto;
-    padding: 1.75em;
+    padding: 0.75em;
     white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 code {
@@ -779,7 +777,7 @@ a:active {
     outline: 0;
 }
 
-.entry-content a,
+/*.entry-content a,*/
 .entry-summary a,
 .taxonomy-description a,
 .logged-in-as a,
@@ -2849,6 +2847,13 @@ span.param {
  */
 
 @media screen and (min-width: 44.375em) {
+
+    /*.shoes-image{
+        width: 10px;
+        width: 10px;
+
+    }*/
+
     body:not(.custom-background-image):before,
     body:not(.custom-background-image):after {
         background: inherit;
