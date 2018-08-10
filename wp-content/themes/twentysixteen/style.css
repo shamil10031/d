@@ -89,6 +89,7 @@ strong > a {
     text-align: left;
     padding: 10px;
     border: 1px solid #dedede;
+    border-radius: 7px;
 }
 
 html {
@@ -2803,9 +2804,9 @@ span.param {
 }
 
 .shoes-post {
-    display: flex;
+    /*display: flex;*/
     border: 1px solid #DEDEDE;
-    border-radius: 4px;
+    border-radius: 7px;
     padding: 37px;
     margin-bottom: 40px !important;
 }
@@ -2820,6 +2821,13 @@ span.param {
     display: flex;
     flex: 1;
     align-content: center;
+}
+
+.shoes-gallery {
+    border: 1px solid #DEDEDE;
+    border-radius: 7px;
+    padding: 17px;
+    margin-top: 20px;
 }
 
 /* тут */
