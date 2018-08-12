@@ -824,8 +824,11 @@ a:active {
     display: block;
 }
 
-.main-navigation {
+.main-navigation, p, a{
     font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+.main-navigation {
     margin: 0 -0.875em;
 }
 
@@ -1597,13 +1600,19 @@ blockquote:after,
     background: #a90000;
 }
 
-.current_page_item, .current-menu-item, .current_page_parent {
+.current_page_item, .current-menu-item, .current_page_parent, .current-category-parent {
     background: #a90000;
 }
 
 li.current_page_item > a,
-li.current_page_parent > a {
+li.current_page_parent > a,
+li.menu-item-type-taxonomy.current-menu-item > a,
+li.menu-item-has-children.current-category-parent > a{
     color: #fff;
+}
+
+li.menu-item li.menu-item > a {
+    color : #000;
 }
 
 /**
@@ -2781,8 +2790,13 @@ p > video {
 
 /* тут */
 
-.post.entry-header {
-    display: none;
+.cat-item a {
+    margin: 10px;
+}
+
+.owl-item .item div {
+    overflow: hidden;
+    width: auto;
 }
 
 article h3 {
@@ -2801,6 +2815,11 @@ article p {
 
 span.param {
     color: #a90000;
+}
+
+span.cost {
+    color: #8a0005;
+    font-weight: bold;
 }
 
 .shoes-post {
@@ -2826,8 +2845,53 @@ span.param {
 .shoes-gallery {
     border: 1px solid #DEDEDE;
     border-radius: 7px;
-    padding: 17px;
+    padding: 17px 17px 0 17px;
     margin-top: 20px;
+}
+
+.colors {
+    margin-left: 10px;
+}
+
+.colors-description, .colors {
+    display: flex;
+}
+
+.square {
+    border: 1px solid #2c2c2c;
+    border-radius: 6px;
+    height: 20px;
+    width:  20px;
+    margin-left: 5px;
+    align-self: center;
+}
+
+.green {
+    background: #00c114;
+}
+
+.violet {
+    background: #7600ff;
+}
+
+.pink {
+    background: #ff00fe;
+}
+
+.dblue {
+    background: #0600ff;
+}
+
+.white {
+    background: #ffffff;
+}
+
+.black {
+    background: #141414;
+}
+
+.brown {
+    background: #6e3e16;
 }
 
 /* тут */
@@ -3132,11 +3196,6 @@ span.param {
         outline-offset: -8px;
         padding: 0.65625em 0.875em;
         white-space: nowrap;
-    }
-
-    .main-navigation li:hover > a,
-    .main-navigation li.focus > a {
-        color: #007acc;
     }
 
     .main-navigation ul ul {
