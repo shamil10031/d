@@ -37,7 +37,7 @@
                 <!--support-->
                 <div class="header-right" class="span6">
                     <div class="custom">
-                        <div><span style="font-size: large; color: #ffffff;">Контактный номер: 8(967)199-05-43</span>
+                        <div><span style="font-size: large; color: #ffffff;">Контактный номер: <a href="callto:89671990543">8(967)199-05-43</a></span>
                         </div>
                         <div><span style="font-size: large; color: #ffffff;">Почта: <strong><a
                                             href="mailto:uyutooo@yandex.ru"> adonis.company@mail.ru </a></strong></span>

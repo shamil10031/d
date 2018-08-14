@@ -824,7 +824,7 @@ a:active {
     display: block;
 }
 
-.main-navigation, p, a{
+.main-navigation, p, a {
     font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
 
@@ -1607,12 +1607,16 @@ blockquote:after,
 li.current_page_item > a,
 li.current_page_parent > a,
 li.menu-item-type-taxonomy.current-menu-item > a,
-li.menu-item-has-children.current-category-parent > a{
+li.menu-item-has-children.current-category-parent > a {
     color: #fff;
 }
 
 li.menu-item li.menu-item > a {
-    color : #000;
+    color: #000;
+}
+
+.header-right a {
+    color: #fff;
 }
 
 /**
@@ -2107,7 +2111,9 @@ body:not(.search-results) .entry-summary > :last-child,
 .sticky .posted-on,
 .byline {
     display: none;
-}авжмлтва
+}
+
+авжмлтва
 .single .byline,
 .group-blog .byline {
     display: inline;
@@ -2789,9 +2795,18 @@ p > video {
 }
 
 /* тут */
+.main-navigation li.menu-item-has-children.current-menu-item:hover > a,
+.main-navigation li.menu-item-has-children.current-menu-item.focus > a,
+.main-navigation li.menu-item-has-children.current-menu-parent:hover > a,
+.main-navigation li.menu-item-has-children.current-menu-parent.focus > a,
+.main-navigation > div > ul > li.current-menu-item:hover > a,
+.main-navigation > div > ul > li.current-menu-item.focus > a {
+    color: #fff !important;
+}
 
 .cat-item a {
     margin: 10px;
+    color: #000;
 }
 
 .owl-item .item div {
@@ -2835,7 +2850,7 @@ span.cost {
     flex: 1.5;
 }
 
-.shoes-image{
+.shoes-image {
     border-right: 1px solid #DEDEDE;
     display: flex;
     flex: 1;
@@ -2861,7 +2876,7 @@ span.cost {
     border: 1px solid #2c2c2c;
     border-radius: 6px;
     height: 20px;
-    width:  20px;
+    width: 20px;
     margin-left: 5px;
     align-self: center;
 }
@@ -2948,7 +2963,7 @@ span.cost {
         margin: 0px;
     }
 
-    .site-main:not(.type-post){
+    .site-main:not(.type-post) {
         margin-bottom: 5.25em;
     }
 
@@ -3586,7 +3601,7 @@ span.cost {
  */
 
 @media screen and (min-width: 61.5625em) {
-    .site-main:not(.type-post){
+    .site-main:not(.type-post) {
         margin-bottom: 7.0em;
     }
 
@@ -4144,9 +4159,10 @@ span.cost {
         margin-left: 0;
     }
 
-    .post-thumbnail{
+    .post-thumbnail {
         margin-bottom: 3.5em;
     }
+
     .site-main > article:not(.type-post) {
         margin-bottom: 3.5em;
     }
